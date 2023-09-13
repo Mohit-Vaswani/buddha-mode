@@ -1,3 +1,6 @@
+![image](https://github.com/Mohit-Vaswani/buddha-mode/assets/89992882/8deebd49-60a0-45c2-9ccf-7ff1e2f62eaa)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
