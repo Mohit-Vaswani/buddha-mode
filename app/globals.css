@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +26,30 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: "Poppins", sans-serif !important;
+}
+
+.user-info h3{
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.user-info p{
+  font-size: 1rem;
+  color: gray;
+}
+
+.navlist ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navlist ul li{
+  font-size: 2rem;
+  color: gray;
+}
+
+.navlist ul li:hover{
+  color: white;
 }

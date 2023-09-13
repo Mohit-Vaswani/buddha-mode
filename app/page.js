@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import WelcomePage from "@/components/layouts/WelcomePage";
+import Sidebar from "@/components/layouts/Sidebar";
+
 
 export default function Home() {
   return (
-    <main>
-      <h1>Buddha Mode</h1>
-    </main>
+    <>
+    <WelcomePage/>
+    </>
   )
 }
