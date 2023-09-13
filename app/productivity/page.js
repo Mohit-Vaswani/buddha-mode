@@ -1,6 +1,12 @@
+import AllFeatures from "@/components/Productivity/AllFeatures"
+import MainHeader from "@/components/crafts/MainHeader"
+
 const page = () => {
   return (
-    <div>Productivity</div>
+    <section className="w-full h-screen p-10">
+      <MainHeader title={'Productivity'}/>
+      <AllFeatures/>
+    </section>
   )
 }
 
