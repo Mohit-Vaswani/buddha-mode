@@ -53,3 +53,28 @@ body {
 .navlist ul li:hover{
   color: white;
 }
+
+/* UserInput */
+
+.userInput{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 500px;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.userInput h1{
+  font-size: 3rem;
+}
+.userInput p{
+  font-size: 1.5rem;
+}
+.userInput input{
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  min-width: 300px;
+}
