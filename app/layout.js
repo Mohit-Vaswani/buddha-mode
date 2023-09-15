@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Sidebar from '@/components/layouts/Sidebar';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 export default function RootLayout({ children }) {
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
           <>
             <Sidebar userName={userName} />
             {children}
+            <Analytics />
           </>
         ) : (
           // If the user hasn't entered their name, display a loader or welcome component
