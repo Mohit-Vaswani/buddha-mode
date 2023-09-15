@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Your metadata here */}
       </head>
-      <body className="flex h-screen">
+      <body className="flex-col lg:flex lg:flex-row h-screen">
         {isUserNameEntered ? (
           // If the user has entered their name, display the main content
           <>

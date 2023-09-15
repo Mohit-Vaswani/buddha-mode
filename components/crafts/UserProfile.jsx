@@ -31,7 +31,7 @@ const UserProfile = ({ userName }) => {
   const truncatedUserName = userName.length > 20 ? userName.slice(0, 20) + "..." : userName;
 
   return (
-    <div className="user-info flex flex-col gap-1">
+    <div className="user-info flex gap-5 lg:flex-col lg:gap-1">
       <input
         type="file"
         accept="image/*"
