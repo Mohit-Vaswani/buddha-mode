@@ -2,43 +2,37 @@
 
 import React, { useState } from "react";
 import { ProductivityFeatures } from "@/constants/constant";
-import Image from "next/image";
+import All from "./All";
+import Notes from "./Notes";
+import Bookmark from "./Bookmark";
+import Quotes from "./Quotes";
+import Todo from "./Todo";
 
 const AllFeatures = () => {
-  const [activeTag, setActiveTag] = useState(ProductivityFeatures[0].tag);
+  const [activeComponent, setActiveComponent] = useState("All"); // Initialize with "All" as the default active component
 
-  const handleTagClick = (tag) => {
-    setActiveTag(tag);
+  const handleTabClick = (componentName) => {
+    setActiveComponent(componentName);
   };
 
   return (
     <div>
       <div className="mt-12 flex gap-10">
         {ProductivityFeatures.map((features, index) => (
-          <div key={index}>
-            <p
-              className={`text-xl ${
-                features.tag === activeTag ? "text-white border-b cursor-pointer" : "text-gray-400 cursor-pointer"
-              }`}
-              onClick={() => handleTagClick(features.tag)}
-            >
+          <div key={index} className="text-xl text-gray-400 cursor-pointer">
+            <p onClick={() => handleTabClick(features.tag)} 
+            className={activeComponent === features.tag ? "active text-orange-400" : ""}>
               {features.tag}
             </p>
           </div>
         ))}
       </div>
-      <div className="mt-6 flex flex-wrap gap-10 w-10/12">
-        {ProductivityFeatures.map((features, index) => (
-          <div key={index}>
-            <Image
-              src={features.imageLink}
-              alt="images"
-              width={500}
-              height={500}
-              className="w-80 h-80 object-cover rounded-xl"
-            />
-          </div>
-        ))}
+      <div className="w-full">
+        {activeComponent === "All" && <All />}
+        {activeComponent === "Notes" && <Notes />}
+        {activeComponent === "Bookmark" && <Bookmark />}
+        {activeComponent === "Quotes" && <Quotes />}
+        {activeComponent === "To-do" && <Todo />}
       </div>
     </div>
   );

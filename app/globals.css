@@ -78,3 +78,11 @@ body {
   border-radius: 50px;
   min-width: 300px;
 }
+
+/* Todo item */
+
+.todo-item input{
+  padding: 4rem;
+  width: 20px;
+  height: 20px;
+}
