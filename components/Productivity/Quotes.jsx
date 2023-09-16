@@ -29,7 +29,7 @@ const Quote = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col p-10 mt-10 border relative">
+    <div className="w-full h-full flex flex-col p-10 mt-10 border relative quoteCard">
       {isLoading ? (
         <p className="text-2xl font-mono">Loading...</p>
       ) : (

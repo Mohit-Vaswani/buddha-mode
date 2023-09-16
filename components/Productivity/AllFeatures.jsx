@@ -17,7 +17,7 @@ const AllFeatures = () => {
 
   return (
     <div>
-      <div className="mt-12 flex gap-10">
+      <div className="mt-12 flex flex-wrap gap-10">
         {ProductivityFeatures.map((features, index) => (
           <div key={index} className="text-xl text-gray-400 cursor-pointer">
             <p onClick={() => handleTabClick(features.tag)} 

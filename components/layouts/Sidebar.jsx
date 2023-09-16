@@ -19,7 +19,7 @@ const Sidebar = ({ userName }) => {
   }, []);
 
   return (
-    <nav className="sidebar flex flex-row-reverse lg:flex-col justify-between p-12 w-full lg:w-3/12">
+    <nav className="sidebar flex flex-row-reverse lg:flex-col justify-between p-4 sm:p-12 w-full lg:w-3/12">
       <UserProfile userName={userName} />
       {windowSize > 1023 ? <NavItems /> : " "}
       <BuddhaLogo />

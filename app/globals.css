@@ -86,3 +86,30 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/* All Section */
+
+.allSection .card{
+  background: #FFFFDD;
+  color: black;
+  width: 13rem;
+  height: 10rem;
+  margin: 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.allSection .quoteCard{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #FFFFDD;
+  color: black;
+}
