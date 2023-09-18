@@ -1,8 +1,15 @@
-import React from 'react'
+import MainHeader from "@/components/crafts/MainHeader"
+
+export const metadata = {
+  title: 'Workout',
+  description: 'A simple yet powerful productivity tool.',
+};
 
 const page = () => {
   return (
-    <div>Coming soon page ...</div>
+    <section className="w-full h-screen p-10">
+      <MainHeader title={'Workout'}/>
+    </section>
   )
 }
 

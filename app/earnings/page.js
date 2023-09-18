@@ -1,4 +1,4 @@
-import FullFeaturedCrudGrid from "@/components/Earnings/EarningTable";
+import EditableTable from "@/components/Earnings/EditableTable";
 import MainHeader from "@/components/crafts/MainHeader"
 
 export const metadata = {
@@ -10,6 +10,7 @@ const page = () => {
   return (
     <section className="w-full h-screen p-10">
       <MainHeader title={'Earnings'}/>
+      <EditableTable/>
     </section>
   )
 }
