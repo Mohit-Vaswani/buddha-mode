@@ -4,24 +4,24 @@ export const NavList = [
         link: '/productivity',
     },
     {
-        item: 'Design',
-        link: '',
+        item: 'Earnings',
+        link: '/earnings',
     },
     {
         item: 'Workout',
-        link: '',
+        link: '/workout',
     },
     {
         item: 'Reading',
-        link: '',
+        link: '/reading',
     },
     {
         item: 'Schedule',
-        link: '',
+        link: '/schedule',
     },
     {
         item: 'Meetings',
-        link: '',
+        link: '/meetings',
     },
 ]
 
