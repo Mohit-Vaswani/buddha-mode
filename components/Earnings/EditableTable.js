@@ -38,9 +38,21 @@ const EditableTable = () => {
     setData(updatedData);
   };
 
+  const calculateTotalEarnings = () => {
+    let total = 0;
+    for (const row of data) {
+      const earnings = parseFloat(row[2].replace('$', '')); // Parse the earnings as a float
+      if (!isNaN(earnings)) {
+        total += earnings;
+      }
+    }
+    return total;
+  };
+  
+
   return (
     <div className='mt-10 overflow-x-scroll sm:overflow-x-hidden'>
-      <table className="table-auto border-collapse">
+      <table className="table-auto border-collapse w-full text-center">
         <thead>
           <tr>
             {columns.map((column, colIndex) => (
@@ -76,7 +88,11 @@ const EditableTable = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={handleAddRow} className="mt-4">Add Row</button>
+      <div className='flex justify-between mt-10'>
+      <button onClick={handleAddRow}>Add Row</button>
+      <h3 className='text-2xl'>Total: ${calculateTotalEarnings()}</h3>
+      </div>
+      
     </div>
   );
 };
